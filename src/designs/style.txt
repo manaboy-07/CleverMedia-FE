@@ -1,0 +1,4 @@
+background = base-100
+card components / grid div = background will be neutral
+icons color = info
+text color = slate-300
