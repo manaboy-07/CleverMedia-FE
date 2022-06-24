@@ -1,11 +1,20 @@
 import React from "react";
+import Navbar from "./Navbar";
+import Hero from "./Hero"
 
 function HomePage() {
-  return <div className="bg-base-100 text-slate-300 min-h-screen">
-    <div className="flex justify-center align-center">
+  return (
+    <div className="bg-base-100 text-slate-200  ">
+     
+      <Navbar/>
       
-    </div>
-  </div>;
+      <Hero/>
+    
+   </div>
+    
+  
+  )
+  
 }
 
 export default HomePage;
