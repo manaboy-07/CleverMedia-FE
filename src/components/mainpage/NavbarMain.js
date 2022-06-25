@@ -1,5 +1,7 @@
 import React from "react";
 import { SearchIcon, VideoCameraIcon } from "@heroicons/react/solid";
+import "typeface-pacifico";
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div className="h-[10vh] ">
@@ -23,9 +25,13 @@ function Navbar() {
               </svg>
             </label> */}
           </div>
-          <a href="#" className="btn btn-ghost normal-case text-xl">
+          <Link
+            to={"/"}
+            className="btn btn-ghost normal-case text-xl"
+            style={{ fontFamily: "pacifico" }}
+          >
             CleverMedia
-          </a>
+          </Link>
         </div>
         <div className=" flex bg-slate-700 rounded-lg px-2 w-full">
           <SearchIcon className="w-7" />
