@@ -1,10 +1,11 @@
 import React from "react";
 import './style.css'
+import 'typeface-pacifico'
 
 const Navbar = () => {
     return(
         <div>
-         <nav className=" bg-gray-900">
+         <nav className=" border-b shadow-md shadow-secondary ">
          <div className="navbar bg-base-100">
           <div className="navbar-start bt flex justify-center">
           <div className="dropdown">
@@ -26,22 +27,22 @@ const Navbar = () => {
         <li><a href="#">Item 3</a></li>
        </ul>
      </div>
-    <a className="btn btn-ghost normal-case text-3xl text-success">Clever Media</a>
+    <a className="btn btn-ghost normal-case text-3xl text-success cursor-default hover-none" style={{fontFamily:'pacifico'}}>Clever Media</a>
     </div>
      <div className="navbar-center hidden lg:flex">
-       <ul className="menu menu-horizontal p-0">
+       <ul className="menu menu-horizontal text-success p-0">
       <li><a href="#">Home</a></li>
       <li tabindex="0">
-        <a>
+        <a href="#" className=" text-success">
           Social
           <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
         </a>
-        <ul className ="p-2">
-          <li><a href="#">Submenu 1</a></li>
-          <li><a href="#">Submenu 2</a></li>
+        <ul className ="p-2  text-success">
+          <li><a href="#">item 1 </a></li>
+          <li><a href="#">item 2</a></li>
           </ul>
             </li>
-          <li><a>Contact</a></li>
+          <li><a href="#" className=" text-success">Contact</a></li>
        </ul>
       </div>
       <div className="navbar-end">
