@@ -30,7 +30,7 @@ const Hero = () => {
         </svg>
       </div>
       <div className="relative z-10">
-        <div className="absolute z-[1] opacity-25 bottom-10 right-12">
+        <div className="absolute z-[1] opacity-25 bottom-10 right-12 md:block hidden">
           <svg
             width="1000"
             height="1000"
@@ -73,8 +73,8 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="mx-22 h-fit">
-        <img src={social} alt="image" className="z-20 h-full" />
+      <div className="mx-22 h-fit p-10">
+        <img src={social} alt="image" className="z-20 lg:h-full h-[300px]" />
       </div>
     </div>
   );
