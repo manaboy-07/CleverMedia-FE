@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
+import "typeface-pacifico";
 
 const Navbar = () => {
   return (
@@ -62,6 +63,7 @@ const Navbar = () => {
             <Link
               to={"/"}
               className="btn btn-ghost normal-case text-3xl text-success"
+              style={{ fontFamily: "pacifico" }}
             >
               Clever Media
             </Link>
