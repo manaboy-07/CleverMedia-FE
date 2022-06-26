@@ -1,17 +1,21 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import MainPage from "./pages/MainPage";
 import Contact from "./pages/Contact";
+import { AnimatePresence } from "framer-motion";
 
 export default function App() {
+  const location = useLocation();
   return (
     <div data-theme="mytheme" className="bg-base-300">
-      <Routes>
-        <Route exact path="/" element={<HomePage />} />
-        <Route path="/main" element={<MainPage />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <AnimatePresence>
+        <Routes location={location} key={location.pathname}>
+          <Route exact path="/" element={<HomePage />} />
+          <Route path="/main" element={<MainPage />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </AnimatePresence>
     </div>
   );
 }
