@@ -95,13 +95,13 @@ const Navbar = () => {
               </ul>
             </li>
             <li>
-              <Link to={"/contact"}>contact</Link>
+              <Link to={"/contact"}>Contact</Link>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
           <a href="#" className="btn text-success rounded-md">
-            Sign Up
+            <Link to={"/SignUp"}>Sign Up</Link>
           </a>
         </div>
       </div>
