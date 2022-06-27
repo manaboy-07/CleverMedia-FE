@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <div className="flex flex-col-reverse items-center justify-evenly space-y-6 my-12 p-5  md:flex-row h-full relative">
-      <div className="absolute z-[1] opacity-25  left-2/3 rotate-180 top-20 ">
+      <div className="absolute z-[1] opacity-25  lg:left-2/3 lg:rotate-180 lg:top-20 rotate-45 ">
         <svg
           width="1000"
           height="1000"
@@ -30,7 +30,7 @@ const Hero = () => {
         </svg>
       </div>
       <div className="relative z-10">
-        <div className="absolute z-[1] opacity-25 bottom-10 right-12 md:block hidden">
+        <div className="absolute z-[1] opacity-25 bottom-10 right-12   lg:block hidden">
           <svg
             width="1000"
             height="1000"
@@ -73,8 +73,8 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="mx-22 h-fit p-10">
-        <img src={social} alt="image" className="z-20 lg:h-full h-[300px]" />
+      <div className="mx-22 h-fit p-10 z-10">
+        <img src={social} alt="social" className="z-20 lg:h-full h-[300px]" />
       </div>
     </div>
   );
