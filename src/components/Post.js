@@ -41,7 +41,7 @@ function Post() {
         <div className="h-full p-2">
           <img
             src={testImage}
-            alt=""
+            alt="test"
             height={"100%"}
             width={"100%"}
             className="rounded-lg"
@@ -54,16 +54,16 @@ function Post() {
               onClick={() => setLiked(!liked)}
             >
               {liked ? (
-                <HeartIcon className="w-7 text-red-500" />
+                <HeartIcon className="lg:w-7 w-5 text-red-500" />
               ) : (
-                <HeartIconOut className="w-7 " />
+                <HeartIconOut className="lg:w-7 w-5 " />
               )}
             </div>
             <div className="btn btn-ghost btn-circle">
-              <ChatIcon className="w-7" />
+              <ChatIcon className="lg:w-7 w-5" />
             </div>
             <div className="btn btn-ghost btn-circle">
-              <ShareIcon className="w-7" />
+              <ShareIcon className="lg:w-7 w-5" />
             </div>
           </div>
           <div
@@ -71,21 +71,21 @@ function Post() {
             onClick={() => setBookmarked(!bookmarked)}
           >
             {bookmarked ? (
-              <BookmarkIcon className="w-7 text-primary" />
+              <BookmarkIcon className="lg:w-7 w-5 text-primary" />
             ) : (
-              <BookmarkIconOut className="w-7" />
+              <BookmarkIconOut className="lg:w-7 w-5" />
             )}
           </div>
         </div>
         <div className="p-2">
-          <p>
+          <p className="lg:text-sm text-xs">
             Liked by <span className="font-bold">Manasseh</span> and{" "}
             <span className="font-bold">1,000 others</span>
           </p>
         </div>
         <div className="p-2">
-          <p>
-            <span className="font-bold">Manasseh</span> I'm addicted to drugs
+          <p className="lg:text-sm text-xs">
+            <span className="font-bold ">Manasseh</span> I'm addicted to drugs
           </p>
         </div>
       </div>
