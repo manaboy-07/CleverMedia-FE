@@ -30,11 +30,11 @@ const Navbar = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a href="#">Item 1</a>
+                <a href="#">Home</a>
               </li>
               <li tabIndex="0">
                 <a href="#" className="justify-between">
-                  Parent
+                  Social
                   <svg
                     className="fill-current"
                     xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +55,7 @@ const Navbar = () => {
                 </ul>
               </li>
               <li>
-                <Link to={"/contact"}>conatct</Link>
+                <Link to={"/contact"}>Contact</Link>
               </li>
             </ul>
           </div>

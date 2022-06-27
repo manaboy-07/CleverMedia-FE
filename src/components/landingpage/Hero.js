@@ -77,6 +77,7 @@ const Hero = () => {
         <img src={social} alt="image" className="z-20 lg:h-full h-[300px]" />
       </div>
     </div>
+    
    
   );
 };
