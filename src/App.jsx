@@ -5,6 +5,7 @@ import MainPage from "./pages/MainPage";
 import Contact from "./pages/Contact";
 import { AnimatePresence } from "framer-motion";
 import LoginPage from "./pages/LoginPage";
+import Profile from "./pages/Profile";
 
 export default function App() {
   const location = useLocation();
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="/main" element={<MainPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/profile/*" element={<Profile />} />
         </Routes>
       </AnimatePresence>
     </div>
