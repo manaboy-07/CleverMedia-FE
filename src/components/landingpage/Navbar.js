@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import "./style.css";
 import "typeface-pacifico";
 
@@ -101,7 +102,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <a href="#" className="btn text-success rounded-md">
-            <Link to={"/SignUp"}>Sign Up</Link>
+            <Link to={"/"}>Sign Up</Link>
           </a>
         </div>
       </div>

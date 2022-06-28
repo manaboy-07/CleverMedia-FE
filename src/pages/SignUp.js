@@ -1,8 +1,10 @@
 import React from "react";
-
+import PageTransition from "../components/PageTransition";
 const SignUp = () => {
     return (
-      <div>
+      <PageTransition>
+           <div>
+      
       <div className="m-9 rounded-3xl shadow-md shadow-slate-900 ">
    <div className="flex justify-center m-12 ">
    <div className="hidden p-2 m-2 max-w-2xl  bg-clip rounded-xl md:block" style={{ 
@@ -84,6 +86,10 @@ const SignUp = () => {
   </div>
   </div>
    </div>
+      </PageTransition>
+    
+    
+     
     )
 };
 
