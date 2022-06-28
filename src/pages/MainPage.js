@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/mainpage/NavbarMain";
 import PageTransition from "../components/PageTransition";
 import Post from "../components/Post";
+import InputBox from "../components/mainpage/InputBox";
 
 function MainPage() {
   return (
@@ -16,8 +17,12 @@ function MainPage() {
               side1
             </div>
           </div>
-          <div className="lg:col-span-3 sm:col-span-5 col-span-9 h-[90vh]">
+          <div className="lg:col-span-3 sm:col-span-5 col-span-9 h-[90vh]   overflow-x-scroll">
             {/* placeholder*/}
+            <div className="flex w-full">
+              <InputBox />
+            </div>
+
             <div className="flex w-full">
               <Post />
             </div>
