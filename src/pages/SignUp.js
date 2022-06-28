@@ -73,7 +73,7 @@ const SignUp = () => {
          <button type="submit"
          className=" items-center w-full h-12 mt-6 bg-success text-base-100 font-bold text-lg">Sign Up</button>
          <label className="label">
-           <span className="label-text font-bold mt-3">Sign Up With </span>
+           <span className="label-text font-bold mt-3">Sign Up With : </span>
            
            <li className="list-none mt-3" >Google</li>
            <li className="list-none mt-3" >Facebook</li>
