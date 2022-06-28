@@ -13,7 +13,7 @@ const SignUp = () => {
   }}>
      
    <div className=" backdrop-blur-xl backdrop-opacity-90 max-w-lg m-10 rounded-md">
-       <h1 className="mt-12 text-2xl font-bold">📡 CleverMedia </h1>
+       <h1 className="mt-12 text-2xl font-bold">📡 Clever Media </h1>
        <p className="mt-3">We are invite only right now</p>
        <p className="mt-3">10+ million people have joined our network. <br/> Connecting the globe like no other.</p>
         <footer className="mt-48">

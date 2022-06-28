@@ -102,7 +102,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <a href="#" className="btn text-success rounded-md">
-            <Link to={"/"}>Sign Up</Link>
+            <Link to={"/SignUp"}>Sign Up</Link>
           </a>
         </div>
       </div>
