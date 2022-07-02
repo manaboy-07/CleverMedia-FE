@@ -1,5 +1,6 @@
 import React from "react";
 import { useLocation, useParams } from "react-router-dom";
+import PageTransition from "../PageTransition";
 import Post from "../Post";
 
 function Posts() {
@@ -14,14 +15,16 @@ function Posts() {
     );
   }
   return (
-    <div className="p-2 mx-4">
-      <div className="grid gap-2 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
-        <Post />
-        <Post />
-        <Post />
-        <Post />
+    <PageTransition>
+      <div className="p-2 mx-4">
+        <div className="grid gap-2 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+          <Post />
+          <Post />
+          <Post />
+          <Post />
+        </div>
       </div>
-    </div>
+    </PageTransition>
   );
 }
 

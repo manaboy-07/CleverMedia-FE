@@ -6,7 +6,7 @@ import "typeface-pacifico";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar px-2 bg-base-100">
+      <div className="navbar px-2 bg-base-100 md:z-0 z-20">
         <div className="navbar-start  flex ">
           <div className="dropdown">
             <label tabIndex="0" className="btn btn-ghost lg:hidden">

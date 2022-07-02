@@ -62,7 +62,7 @@ function Navbar() {
                 </Link>
               </li>
               <li>
-                <a>Settings</a>
+                <Link to={"/profile/settings/:id"}>Settings</Link>
               </li>
               <li>
                 <a>Logout</a>
