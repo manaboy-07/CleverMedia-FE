@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import "./style.css";
 import "typeface-pacifico";
 
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar px-2 bg-base-100">
+      <div className="navbar px-2 bg-base-100 md:z-0 z-20">
         <div className="navbar-start  flex ">
           <div className="dropdown">
             <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -30,11 +31,11 @@ const Navbar = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a href="#">Item 1</a>
+                <a href="#">Home</a>
               </li>
               <li tabIndex="0">
                 <a href="#" className="justify-between">
-                  Parent
+                  Social
                   <svg
                     className="fill-current"
                     xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +56,7 @@ const Navbar = () => {
                 </ul>
               </li>
               <li>
-                <Link to={"/contact"}>conatct</Link>
+                <Link to={"/contact"}>Contact</Link>
               </li>
             </ul>
           </div>
@@ -95,13 +96,13 @@ const Navbar = () => {
               </ul>
             </li>
             <li>
-              <Link to={"/contact"}>contact</Link>
+              <Link to={"/contact"}>Contact</Link>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
           <a href="#" className="btn text-success rounded-md">
-            Sign Up
+            <Link to={"/SignUp"}>Sign Up</Link>
           </a>
         </div>
       </div>

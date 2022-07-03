@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <div className="flex flex-col-reverse items-center justify-evenly space-y-6 my-12 p-5  md:flex-row h-full relative">
-      <div className="absolute z-[1] opacity-25  lg:left-2/3 lg:rotate-180 lg:top-20 rotate-45 ">
+      <div className="absolute z-[1] opacity-25  lg:left-2/3 lg:rotate-180 lg:top-20 lg:block hidden rotate-45 ">
         <svg
           width="1000"
           height="1000"
@@ -77,6 +77,8 @@ const Hero = () => {
         <img src={social} alt="social" className="z-20 lg:h-full h-[300px]" />
       </div>
     </div>
+    
+   
   );
 };
 
