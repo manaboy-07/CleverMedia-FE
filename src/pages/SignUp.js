@@ -1,6 +1,41 @@
 import React from "react";
 import PageTransition from "../components/PageTransition";
 const SignUp = () => {
+     const [form, setForm] = React.useState({
+      email: "",
+      password: "",
+      confirmPassword: "",
+      isPassword: false
+     })
+
+     function handleChange(event){
+      const{name,value,type,checked} = event.target
+      setForm(prevform => {
+        return{
+          ...prevform,
+          [name]: type === "checkbox"  ?  checked : value 
+        }
+      })
+     
+     };
+     
+     function handleSubmit(event){
+      event.preventDefault()
+      // if(form.isPassword === form.confirmPassword){
+      //   console.log("passwords match");
+      // }else{
+      //   return
+      // }
+
+    }
+    
+    function showPassword(){
+      setForm(!form.isPassword);
+        
+    }
+
+    
+
     return (
       <PageTransition>
            <div>
@@ -29,6 +64,7 @@ const SignUp = () => {
      <p className="mt-3 text-lg">Create your account</p>
      {/* info pg */}
     <div className="mt-9">
+      <form onSubmit={handleSubmit}>
       <label className="label">
          <span className="label-text font-bold">What is your email?</span>
              {/* <span className="label-text-alt">Alt label</span> */}
@@ -38,6 +74,11 @@ const SignUp = () => {
                  placeholder="Enter your email"
                  className="input bg-base-300   w-full md:max-w-xs"
                  id="email"
+                 name="email"
+                 onChange={handleChange}
+                 value={form.email}
+                 autoFocus
+                 required
                />
   
   
@@ -46,10 +87,29 @@ const SignUp = () => {
             {/* <span className="label-text-alt">Alt label</span> */}
         </label>
          <input
-           type="password"
+           type= {form.isPassword ? "text" : "password"}
+           name="password"
            placeholder="Enter Password"
            className="input bg-base-300   w-full md:max-w-xs"
            id="password"
+           onChange={handleChange}
+           value={form.password}
+           required
+         />
+
+<label className="label">
+           <span className="label-text font-bold">Confirm Password</span>
+            {/* <span className="label-text-alt">Alt label</span> */}
+        </label>
+         <input
+           type={form.isPassword ? "text" : "password"}
+           name="confirmPassword"
+           placeholder="Confirm Password"
+           className="input bg-base-300   w-full md:max-w-xs"
+           id="password"
+           onChange={handleChange}
+           value={form.confirmPassword}
+           required
          />
   
          <div className="flex">
@@ -62,9 +122,13 @@ const SignUp = () => {
            placeholder="Enter Password"
            className="inline mt-3"
            id="checkbox"
+           checked={form.isPassword}
+           onChange={handleChange}
+           name= "isPassword"
+           onClick={showPassword}
            />
-            <label className="label">
-           <span className="label-text font-bold ml-3">Show Password ?</span>
+            <label className="label" htmlFor="checkbox">
+           <span className="label-text font-bold mt-3">Show Password ?</span>
             {/* <span className="label-text-alt">Alt label</span> */}
         </label>
           
@@ -80,7 +144,8 @@ const SignUp = () => {
            <li className="list-none mt-3" >Google</li>
            <li className="list-none mt-3" >Facebook</li>
            <li className="list-none mt-3" >LinkedIn</li>
-         </label>       
+         </label>    
+      </form>   
     </div>
    </div>
   </div>
