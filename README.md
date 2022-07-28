@@ -1,3 +1,9 @@
+<!-- @format -->
+
+This is the first ever CleverDevs Project.
+A social media app made with react and redux toolkit.
+Anticipate our work ...more projects incoming 💪.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
